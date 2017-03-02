@@ -62,7 +62,7 @@ function zoom(fromX, toX, fromY, toY) {
 
 			var pix = (x + (y * width)) * 4;
 			pixels[pix + 0] = 0;
-			pixels[pix + 1] = 0;
+			pixels[pix + 1] = bright;
 			pixels[pix + 2] = bright;
 			pixels[pix + 3] = 255;
 
