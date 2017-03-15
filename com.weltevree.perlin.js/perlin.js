@@ -1,6 +1,7 @@
 
 // var nice = [200, 200, 0.02, 0.002, 10, 2000, 4];
-var nice = [19000, 8000, 0.02, 0.002, 10, 2000, 4];
+// var nice = [7280, 4320 , 0.02, 0.002, 10, 2000, 4];
+var nice = [8000, 6000 , 0.02, 0.002, 10, 1000, 4];
 // var nice = [600, 600, 0.02, 0.002, 50, 1000, 3];
 var myX;
 var myY;
@@ -25,9 +26,6 @@ var pg;
 
 
 function setup() {
-	// snake = new Snake();
-	// terrain = new Terrain();
-	// background(51);
 	myX = nice[0];
 	myY = nice[1];
 	inc = nice[2];
@@ -47,17 +45,18 @@ function setup() {
 		particles[i] = new Particle();
 	}
 	pg.background(255);
+	updateFlowField(false);
 }
 
 function draw() {
 // pg.background(255);
-	drawFlowField(false);
 	 updateParticles();
-	 if(counter++ == 1000){
+	 updateFlowField(false);
+//	 if(counter++ == 1){
 	 image(pg, 0, 0);
-	 counter = 0;
+//	 counter = 0;
 	 fr.html(floor(frameRate()) + " " + iteration++);
-	 }
+//	 }
 
 }
 
@@ -71,7 +70,7 @@ function updateParticles(){
 	}
 }
 
-function drawFlowField(draw){
+function updateFlowField(draw){
 	var startY = 0;
 	for (var blockY = 0; blockY < rows; blockY++) {
 		var startX = 0;
