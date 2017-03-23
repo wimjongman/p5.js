@@ -1,7 +1,7 @@
 
 // var nice = [200, 200, 0.02, 0.002, 10, 2000, 4];
 // var nice = [7280, 4320 , 0.02, 0.002, 10, 2000, 4];
-var nice = [8000, 6000 , 0.02, 0.002, 10, 1000, 4];
+var nice = [800, 800 , 0.02, 0.002, 10, 2000, 4];
 // var nice = [600, 600, 0.02, 0.002, 50, 1000, 3];
 var myX;
 var myY;
@@ -97,7 +97,7 @@ function updateFlowField(draw){
 
 function show(p){
 		// ellipse(this.pos.x, this.pos.y, 5, 5);
-		pg.stroke(0, 2);
+		pg.stroke(255,0,0, 10);
 		pg.strokeWeight(1);
 		pg.line(p.pos.x, p.pos.y, p.prv.x, p.prv.y);
 // point(this.pos.x, this.pos.y);

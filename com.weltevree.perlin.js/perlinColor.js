@@ -1,7 +1,7 @@
 'use strict';
 // var nice = [200, 200, 0.02, 0.002, 10, 2000, 4];
 // var nice = [7280, 4320 , 0.02, 0.002, 10, 2000, 4];
-var nice = [8000, 6000 , 0.02, 0.004, 15, 1000, 4, 23345];
+var nice = [800, 800 , 0.02, 0.04, 15, 2000, 4, 23345];
 // var nice = [600, 600, 0.02, 0.002, 50, 1000, 3];
 var myX;
 var myY;
@@ -33,7 +33,7 @@ function setup() {
 	scl = nice[4];
 	parts = nice[5];
 	magnitude = nice[6];
-	noiseSeed(nice[7]);
+	// noiseSeed(nice[7]);
 
 	createCanvas(myX, myY);
 	pg = createGraphics(myX, myY);
@@ -54,7 +54,7 @@ function draw() {
 		noLoop();
 		return;
 	}
-//	pg.background(255);
+	// pg.background(255);
 	updateParticles();
 	 updateFlowField(false);
 	
