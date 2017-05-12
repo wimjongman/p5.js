@@ -1,6 +1,6 @@
 "use strict";
 
-var fNumberOfChasers = 150;
+var fNumberOfChasers = 400;
 var fChasers = [];
 var fMaxVelocity = 10;
 var fMinWidth, fMaxWidth, fMinHeight, fMaxHeight;
