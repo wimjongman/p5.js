@@ -67,7 +67,7 @@ Vector.randomVector = function(pXRange, pYRange) {
 	var xRange = pXRange || 1;
 	var yRange = pYRange || 1;
 	var dice = Math.round(Math.random());
-	var x = p5.random(xRange);
+	var x = Math.random(xRange);
 	if (dice === -1) {
 		x = -x;
 	}
